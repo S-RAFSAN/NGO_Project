@@ -1,0 +1,731 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registration-page {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.reg-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reg-title h3 {
+    color: #333;
+}
+
+.reg-options label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.reg-info {
+    margin-bottom: 20px;
+}
+
+.reg-info input,
+.reg-info select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reg-info input[type="radio"] {
+    margin-right: 1px;
+    margin-bottom: 3px; /* Adjust this value to control the vertical spacing */
+}
+
+.reg-info label {
+    display: inline-block;
+    margin-right: 15px; /* Adjust this value to control the horizontal spacing */
+    margin-bottom: 5px; /* Adjust this value to control the vertical spacing */
+}
+
+.reg-info br {
+    display: none;
+}
+
+.reg-info span.text-danger {
+    display: block;
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+.reg-sign button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reg-login {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.reg-login a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.reg-login a:hover {
+    text-decoration: underline;
+}
+
+/* Login page */
+
+
+.log-page {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.log-head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.log-title {
+    font-size: 20px;
+    color: #333;
+}
+
+.log-message {
+    color: #4CAF50;
+}
+
+.log-box {
+    margin-top: 20px;
+}
+
+.log-error {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.log-email,
+.log-password {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn-log {
+    margin-top: 20px;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+.btn-signup {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.btn-signup a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.btn-signup a:hover {
+    text-decoration: underline;
+}
+
+/* Home Page  */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+.nav-links {
+    display: inline-block;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    width: 80px; /* Set a specific width for all images */
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card-description {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.card-link:hover {
+    background-color: #0056b3;
+}
+
+/* Donor List */
+
+
+/* .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.main-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+.nav-links {
+    display: inline-block;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.message {
+    color: #28a745;
+}
+
+.donors-content {
+    margin-top: 20px;
+}
+
+.donors-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+}
+
+.add-donor-link {
+    text-align: right;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.donors-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.donors-table th,
+.donors-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.donors-table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.donors-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Add Donor */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Delete Donor  */
+
+
+.confirmation-message {
+    margin-bottom: 20px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Edit Donor */
+
+.label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Admin List */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+.navbar-links a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.message {
+    margin-bottom: 20px;
+    color: #28a745;
+}
+
+.admin-list {
+    margin-top: 20px;
+}
+
+.admin-list-header {
+    margin-bottom: 10px;
+}
+
+.admin-list-actions a {
+    text-decoration: none;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Edit Admin */
+
+/* .container {
+    max-width: 800px;
+    margin: 0 auto;
+} */
+
+.edit-admin {
+    margin-top: 20px;
+}
+
+.edit-admin-header {
+    margin-bottom: 10px;
+}
+
+.edit-admin-form {
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Add Admin */
+
+.add-admin {
+    margin-top: 20px;
+}
+
+.add-admin-header {
+    margin-bottom: 10px;
+}
+
+.add-admin-form {
+    max-width: 400px;
+}
+
+/* Search Engine */
+
+/* .container {
+    max-width: 800px;
+    margin: 0 auto;
+} */
+
+.navbar {
+    margin-top: 20px;
+}
+
+.nav-links {
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.search-form {
+    margin-top: 10px;
+}
+
+.form-group {
+    display: flex;
+}
+
+.search-input {
+    flex: 1;
+    padding: 5px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-results {
+    margin-top: 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Donate / Receive */
+
+/* .container {
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+.main-navigation {
+    margin-top: 20px;
+    background-color: #333;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    padding: 20px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    
+}
+
+.filter-form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-header h4 {
+    margin: 0;
+}
+
+.filter-btn {
+    padding: 5px 10px;
+}
+
+.blood-groups {
+    margin-top: 10px;
+}
+
+.blood-group-item {
+    margin-bottom: 5px;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 20px;
+}
+
+.item-card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
