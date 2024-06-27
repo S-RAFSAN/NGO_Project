@@ -17,28 +17,37 @@ $result = $conn->query($sql);
     <link rel="stylesheet" href="styles.css">
 
     <script>
-        function myFunction() {
-            // Declare variables
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementsByClassName("donors-table")[0];
-            tr = table.getElementsByTagName("tr");
+    function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.querySelector(".donors-table");
+        tr = table.getElementsByTagName("tr");
 
-            
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[1];  (0-indexed)
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
+        // Loop through all table rows
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1]; // Assuming you want to filter based on the "Name" column (index 1)
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
                 }
             }
         }
-    </script>
+    }
+
+    setTimeout(function(){
+        var messageElement = document.querySelector('.message');
+        if (messageElement) {
+            messageElement.style.display = 'none';
+        }
+    }, 3000);
+    
+</script>
+
 
 </head>
 
@@ -46,12 +55,14 @@ $result = $conn->query($sql);
 
     <div class="container">
 
-        <nav class="main-nav">
+    <nav class="main-nav">
             <div class="nav-links">
                 <a class="nav-link" href="HomePage.php">Home</a>
+                <a class="nav-link" href="Profile.php">Profile</a>
                 <a class="nav-link" href="Logout.php">Logout</a>
             </div>
         </nav>
+
 
         <p class="message text-center text-success mt-4">
             <?php if (!empty($_SESSION['message'])) {

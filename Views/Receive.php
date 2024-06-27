@@ -11,11 +11,12 @@
 
 <body>
 
-    <div class=" container">
+    <div class="container">
 
-        <nav class="main-navigation" style="margin-top: 20px">
+        <nav class="main-nav">
             <div class="nav-links">
                 <a class="nav-link" href="HomePage.php">Home</a>
+                <a class="nav-link" href="Profile.php">Profile</a>
                 <a class="nav-link" href="Logout.php">Logout</a>
             </div>
         </nav>

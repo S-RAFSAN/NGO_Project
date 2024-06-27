@@ -12,14 +12,13 @@
 
     <div class="container">
 
-        <div class="navbar">
-            <nav class="nav-links">
-                <div class="nav-item">
-                    <a class="nav-link" href="HomePage.php">Home</a>
-                    <a class="nav-link" href="Logout.php">Logout</a>
-                </div>
-            </nav>
-        </div>
+    <nav class="main-nav">
+            <div class="nav-links">
+                <a class="nav-link" href="HomePage.php">Home</a>
+                <a class="nav-link" href="Profile.php">Profile</a>
+                <a class="nav-link" href="Logout.php">Logout</a>
+            </div>
+        </nav>
 
         <div class="search-form">
             <form action="" method="GET">

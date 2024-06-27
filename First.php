@@ -14,19 +14,19 @@
 
         <div class="welcome-video-container">
             <video class="welcome-video" autoplay loop muted>
-                <source src="background.mp4" type="video/mp4">                
+                <source src="Assets/background.mp4" type="video/mp4">                
             </video>
             
             <div class="content">
                 <div class="welcome-box">
-                    <img class="welcome-image" src="login.png" alt="Donor Image">
+                    <img class="welcome-image" src="Assets/login.png" alt="Donor Image">
                     <a href="Controllers/logController.php" class="welcome-link">LOGIN</a>
                 </div>
 
                 <h1>WELCOME !</h1>
 
                 <div class="welcome-box">
-                    <img class="welcome-image" src="registration.jpeg" alt="Admin Image">
+                    <img class="welcome-image" src="Assets/registration.jpeg" alt="Admin Image">
                     <a href="Controllers/regController.php" class="welcome-link">REGISTRATION</a>
                 </div>
             </div>

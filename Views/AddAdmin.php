@@ -1,29 +1,5 @@
 <?php
 session_start();
-include('database.php');
-
-$unsuccessfulmsg = '';
-
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $mobile = $_POST['mobile'];
-    $email = $_POST['email'];
-    $address = $_POST['address'];
-
-    if (empty($name) || empty($mobile) || empty($email) || empty($address)) {
-        $emptymsg = 'Fill up all fields';
-    } else {
-        $stmt = $conn->prepare("INSERT INTO admin ( name, mobile, email, address) VALUES ( ?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $name, $mobile, $email, $address);
-
-        if ($stmt->execute()) {
-            header('location: AdminList.php');
-            $_SESSION['message'] = 'Admin Saved Successfully';
-        } else {
-            echo 'Data not inserted';
-        }
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -38,11 +14,13 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="container">
-        <div class="add-admin">
-            <div class="add-admin-header">
-                <h4>Add Admin</h4>
-            </div>
-            <form action="" method="POST" class="add-admin-form">
+        <div class="page-header">
+            <h2>Add Admin</h2>
+        </div>
+
+        <div class="contains">
+            
+            <form action="../Controllers/addAdminController.php" method="POST" class="add-admin-form">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" />
@@ -63,8 +41,8 @@ if (isset($_POST['submit'])) {
                     <button name="submit" class="btn btn-primary">Save</button>
                 </div>
             </form>
+
         </div>
-    </div>
 </body>
 
 </html>
